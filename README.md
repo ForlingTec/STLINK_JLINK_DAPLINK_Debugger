@@ -1,10 +1,3 @@
----
-typora-root-url: ./
-
----
-
-
-
 ## 作者
 
 **风陵：**
@@ -18,7 +11,6 @@ CSDN:https://blog.csdn.net/weixin_42518229
 https://blog.csdn.net/mbs520
 
 ## 一、产品介绍
-
 该产品是一款基于USB2.0接口支持多个公司及多种内核的仿真器/编程器，板载了USB HUB、CPLD芯片，集成了DAPLink V2 & STLink V2 & JLink V9.7 & CDC虚拟串口/USB转串口四合一功能，硬件匹配选择的调试器并自动切换输出信号，无需重复更换固件和调试器，真正做到一机多用。
 
 ## 二、产品说明
@@ -34,29 +26,29 @@ https://blog.csdn.net/mbs520
 
 ## 三、硬件框图
 
-![](./document/基本图片/system diagram.jpg)
+![](https://github.com/ForlingTec/STLINK_JLINK_DAPLINK_Debugger/blob/master/document/%E5%9F%BA%E6%9C%AC%E5%9B%BE%E7%89%87/system%20diagram.jpg)
 
 ## 四、产品使用
 
-![](document//基本图片/输出信号.png)
+![](https://github.com/ForlingTec/STLINK_JLINK_DAPLINK_Debugger/blob/master/document/%E5%9F%BA%E6%9C%AC%E5%9B%BE%E7%89%87/%E8%BE%93%E5%87%BA%E4%BF%A1%E5%8F%B7.png)
 
 安装完JLINK、STLINK等驱动，一般常用的KEIL/IAR等常用IDE会集成这些驱动程序，插入TYPE-C线，设备管理器显示以下新增设备
 
-![](./document/基本图片/设备管理器.jpg)
+![](https://github.com/ForlingTec/STLINK_JLINK_DAPLINK_Debugger/blob/master/document/%E5%9F%BA%E6%9C%AC%E5%9B%BE%E7%89%87/%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86%E5%99%A8.jpg)
 
 其中在KEIL中，将调试器与板子正常连接，选择调试器类型，会正常识别目标芯片(图中连接的芯片为STM32G0系列)，如下图
 
-![](./document/基本图片/KEIL DEBUG.jpg)
+![](https://github.com/ForlingTec/STLINK_JLINK_DAPLINK_Debugger/blob/master/document/%E5%9F%BA%E6%9C%AC%E5%9B%BE%E7%89%87/KEIL%20DEBUG.jpg)
 
 ## 五、产品外观
 
-![](./document/基本图片/PCBA 3D图.png)
+![](https://github.com/ForlingTec/STLINK_JLINK_DAPLINK_Debugger/blob/master/document/%E5%9F%BA%E6%9C%AC%E5%9B%BE%E7%89%87/PCBA%203D%E5%9B%BE.png)
 
 ![](./document/基本图片/外壳3D图.jpg)
 
 ![](./document/基本图片/实物图.JPG)
 
-![](/../document/基本图片/微信图片_20231008235237.jpg)
+![](./document/基本图片/微信图片_20231008235237.jpg)
 
 
 
@@ -154,15 +146,15 @@ CPLD软件工程用的是Quartus II + Supra混合开发,详情请查看AGM遨格
 
 4. 点击“生成”按钮，生成License SN号
 
-   ![](./document/固件下载/生成Jlink License.jpg)
+   ![](https://github.com/ForlingTec/STLINK_JLINK_DAPLINK_Debugger/blob/master/document/%E5%9B%BA%E4%BB%B6%E4%B8%8B%E8%BD%BD/%E7%94%9F%E6%88%90Jlink%20License.jpg)
 
 5. 运行“JLink_V6.32b.exe”程序，这时候会更新JLINK App固件，更新App完毕后将生成的S/N号和命令分别一条一条添加进去
 
-   ![](./document/固件下载/添加JLINK License.jpg)
+   ![](https://github.com/ForlingTec/STLINK_JLINK_DAPLINK_Debugger/blob/master/document/%E5%9B%BA%E4%BB%B6%E4%B8%8B%E8%BD%BD/%E6%B7%BB%E5%8A%A0JLINK%20License.jpg)
 
 6. 重新插拔USB，并重新打开“JLink_V6.32b.exe”程序，识别到以下信息
 
-   ![](./document/固件下载/成功添加Jlink License.jpg)
+   ![](https://github.com/ForlingTec/STLINK_JLINK_DAPLINK_Debugger/blob/master/document/%E5%9B%BA%E4%BB%B6%E4%B8%8B%E8%BD%BD/%E6%88%90%E5%8A%9F%E6%B7%BB%E5%8A%A0Jlink%20License.jpg)
 
 ## 九、链接
 
