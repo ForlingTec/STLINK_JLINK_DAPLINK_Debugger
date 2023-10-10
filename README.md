@@ -1,5 +1,6 @@
 ---
 typora-root-url: ./
+
 ---
 
 
@@ -17,6 +18,7 @@ CSDN:https://blog.csdn.net/weixin_42518229
 https://blog.csdn.net/mbs520
 
 ## 一、产品介绍
+
 该产品是一款基于USB2.0接口支持多个公司及多种内核的仿真器/编程器，板载了USB HUB、CPLD芯片，集成了DAPLink V2 & STLink V2 & JLink V9.7 & CDC虚拟串口/USB转串口四合一功能，硬件匹配选择的调试器并自动切换输出信号，无需重复更换固件和调试器，真正做到一机多用。
 
 ## 二、产品说明
@@ -32,7 +34,7 @@ https://blog.csdn.net/mbs520
 
 ## 三、硬件框图
 
-![](document//基本图片/system diagram.jpg)
+![](./document/基本图片/system diagram.jpg)
 
 ## 四、产品使用
 
@@ -40,19 +42,23 @@ https://blog.csdn.net/mbs520
 
 安装完JLINK、STLINK等驱动，一般常用的KEIL/IAR等常用IDE会集成这些驱动程序，插入TYPE-C线，设备管理器显示以下新增设备
 
-![](document//基本图片/设备管理器.jpg)
+![](./document/基本图片/设备管理器.jpg)
 
 其中在KEIL中，将调试器与板子正常连接，选择调试器类型，会正常识别目标芯片(图中连接的芯片为STM32G0系列)，如下图
 
-![](document//基本图片/KEIL DEBUG.jpg)
+![](./document/基本图片/KEIL DEBUG.jpg)
 
 ## 五、产品外观
 
-![](document//基本图片/PCBA 3D图.png)
+![](./document/基本图片/PCBA 3D图.png)
 
-![](document//基本图片/外壳3D图.jpg)
+![](./document/基本图片/外壳3D图.jpg)
 
-![](document//基本图片/实物图.JPG)
+![](./document/基本图片/实物图.JPG)
+
+![](/../document/基本图片/微信图片_20231008235237.jpg)
+
+
 
 ## 六、软硬件设计
 
@@ -72,13 +78,13 @@ CPLD软件工程用的是Quartus II + Supra混合开发,详情请查看AGM遨格
 
 固件下载接口如下：详情请查看原理图与PCB
 
-![](document/基本图片/固件下载口信号.png)
+![](./document/基本图片/固件下载口信号.png)
 
 ### STLINK
 
 ------
 
-![](document//固件下载/STLINK固件下载.jpg)
+![](./document/固件下载/STLINK固件下载.jpg)
 
 
 
@@ -86,7 +92,7 @@ CPLD软件工程用的是Quartus II + Supra混合开发,详情请查看AGM遨格
 
 ------
 
-![](document//固件下载/DAPLINK固件下载.jpg)
+![](./document/固件下载/DAPLINK固件下载.jpg)
 
 
 
@@ -94,7 +100,7 @@ CPLD软件工程用的是Quartus II + Supra混合开发,详情请查看AGM遨格
 
 ------
 
-![](document//固件下载/JLINK固件下载.jpg)
+![](./document/固件下载/JLINK固件下载.jpg)
 
 
 
@@ -104,11 +110,11 @@ CPLD软件工程用的是Quartus II + Supra混合开发,详情请查看AGM遨格
 
 1. 用Supra打开软件工程，点击左上角的“file - project - open project - AG1280.proj”，然后点击倒数第二个图标“program into device”打开烧录界面
 
-   ![](document//固件下载/Supra打开工程.jpg)
+   ![](./document/固件下载/Supra打开工程.jpg)
 
 2. 将USB-blaster按照原理图上的信号连接好，按照以下步骤烧录CPLD固件
 
-   ![](document//固件下载/烧录CPLD固件.png)
+   ![](./document/固件下载/烧录CPLD固件.png)
 
 
 
@@ -124,11 +130,11 @@ CPLD软件工程用的是Quartus II + Supra混合开发,详情请查看AGM遨格
 
 **1、重新打开STM32CubeProgrammer软件，进入固件升级界面**
 
-![](document//固件下载/STLINK进入固件升级模式.jpg)
+![](./document/固件下载/STLINK进入固件升级模式.jpg)
 
 **2、点击“Open in update mode”进入升级模式，识别到版本信息后点击“upgrade”升级按钮，等待升级完毕**
 
-![](document//固件下载/STLINK在线升级固件.jpg)
+![](./document/固件下载/STLINK在线升级固件.jpg)
 
 
 
@@ -148,15 +154,15 @@ CPLD软件工程用的是Quartus II + Supra混合开发,详情请查看AGM遨格
 
 4. 点击“生成”按钮，生成License SN号
 
-   ![](document//固件下载/生成Jlink License.jpg)
+   ![](./document/固件下载/生成Jlink License.jpg)
 
 5. 运行“JLink_V6.32b.exe”程序，这时候会更新JLINK App固件，更新App完毕后将生成的S/N号和命令分别一条一条添加进去
 
-   ![](document//固件下载/添加JLINK License.jpg)
+   ![](./document/固件下载/添加JLINK License.jpg)
 
 6. 重新插拔USB，并重新打开“JLink_V6.32b.exe”程序，识别到以下信息
 
-   ![](document//固件下载/成功添加Jlink License.jpg)
+   ![](./document/固件下载/成功添加Jlink License.jpg)
 
 ## 九、链接
 
