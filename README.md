@@ -160,7 +160,9 @@ CPLD软件工程用的是Quartus II + Supra混合开发,详情请查看AGM遨格
 
 bilibi哔哩哔哩：
 
-GitHub：https://github.com/ForlingTec/JLINK_DAPLINK_STLINK_USART_Debugger
+立创开源广场：https://oshwhub.com/mr.liu0710/DAPLink-STLink-JLINK-chuan-kou-s
+
+GitHub：https://github.com/ForlingTec/STLINK_JLINK_DAPLINK_Debugger.git
 
 CSDN：https://blog.csdn.net/weixin_42518229?spm=1000.2115.3001.5343
 
