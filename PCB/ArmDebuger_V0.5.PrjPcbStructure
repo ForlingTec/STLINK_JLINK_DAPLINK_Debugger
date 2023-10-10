@@ -1,0 +1,7 @@
+Record=TopLevelDocument|FileName=ArmDebuger(1-7)-POWER.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=ArmDebuger(1-7)-POWER.SchDoc|FileName=ArmDebuger(2-7)-HUB.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=ArmDebuger(1-7)-POWER.SchDoc|FileName=ArmDebuger(3-7)STLink_V2.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=ArmDebuger(1-7)-POWER.SchDoc|FileName=ArmDebuger(4-7)JLink_V9.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=ArmDebuger(1-7)-POWER.SchDoc|FileName=ArmDebuger(5-7)DAPLink_V2.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=ArmDebuger(1-7)-POWER.SchDoc|FileName=ArmDebuger(6-7)Port.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=ArmDebuger(1-7)-POWER.SchDoc|FileName=ArmDebuger(7-7)-CPLD.SchDoc|SheetNumber= 

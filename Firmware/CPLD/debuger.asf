@@ -1,0 +1,72 @@
+#date : 2023-08-04
+#name : Topping LHS
+#berf : arm debuger selector.
+#soft : V0.3
+#hard : V0.3
+
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to xxx -extension    
+#3.3V current strength: 2'b01:8ma(default) 2'b10:16ma  2'b11：24ma 
+#reference linker: https://ica123.com/archives/15495
+#I/O standard function：Schmitt trigger input
+
+#creat .svf file.
+#bitgen normal -svf "${RESULT_DIR}/${RESULT}.svf
+
+#BANK South I/O current strength
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to STLINK_LED_RUN     -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to STLINK_JTCK_SWCLK  -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to JLINK_LED1         -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to STLINK_TDI         -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to DAPLINK_TDI        -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to JLINK_JTMS_SWDIO   -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to DAPLINK_JTCK_SWCLK -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to DAPLINK_LED_RUN    -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to DEBUG_JTCK_SWCLK   -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to DEBUG_TDI          -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to STLINK_JTCK_RESET  -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to DAPLINK_RESET      -extension
+
+#BANK South I/O PIN define
+set_location_assignment PIN_14 -to STLINK_LED_RUN
+set_location_assignment PIN_16 -to STLINK_JTCK_SWCLK
+set_location_assignment PIN_17 -to JLINK_LED1
+set_location_assignment PIN_18 -to STLINK_TDI
+set_location_assignment PIN_20 -to DAPLINK_TDI
+set_location_assignment PIN_22 -to JLINK_JTMS_SWDIO
+set_location_assignment PIN_23 -to DAPLINK_JTCK_SWCLK
+set_location_assignment PIN_25 -to DAPLINK_LED_RUN
+set_location_assignment PIN_9  -to DEBUG_JTCK_SWCLK  
+set_location_assignment PIN_13 -to DEBUG_TDI
+set_location_assignment PIN_15 -to STLINK_JTCK_RESET  
+set_location_assignment PIN_19 -to DAPLINK_RESET
+
+
+#BANK North I/O current strength
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to JLINK_JTCK_SWCLK       -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to JLINK_NCTL1            -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to LED_B                  -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to LED_G                  -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to LED_R                  -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to DEBUG_RESET            -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to LINK_SEL1              -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to JLINK_LED2             -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to JLINK_JTDI_TXD         -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to LINK_SEL2              -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to JLINK_NDAT7            -extension
+#set_instance_assignment -name CFG_PDRCTRL 2'b11 -to JLINK_RESET            -extension
+
+#BANK North I/O PIN define
+set_location_assignment PIN_1  -to JLINK_JTCK_SWCLK
+set_location_assignment PIN_2  -to JLINK_NCTL1
+set_location_assignment PIN_3  -to LED_B
+set_location_assignment PIN_4  -to LED_G
+set_location_assignment PIN_5  -to LED_R
+set_location_assignment PIN_6  -to DEBUG_RESET
+set_location_assignment PIN_42 -to LINK_SEL1
+set_location_assignment PIN_45 -to JLINK_LED2
+set_location_assignment PIN_48 -to JLINK_JTDI_TXD
+set_location_assignment PIN_41 -to LINK_SEL2
+set_location_assignment PIN_44 -to JLINK_NDAT7
+set_location_assignment PIN_46 -to JLINK_RESET  
+
+

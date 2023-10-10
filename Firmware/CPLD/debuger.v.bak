@@ -1,0 +1,36 @@
+module debuger(
+input STLINK_LED_RUN,
+input STLINK_JTCK_RESET,
+input STLINK_TDO_SWO,
+ouput STLINK_TDI,
+input STLINK_JTCK_SWCLK,
+inout STLINK_JTMS_SWDIO,
+
+input JLINK_LED1,
+input JLINK_LED2,
+input JLINK_RESET,
+input JLINK_JTDO,
+inout JLINK_JTDI_TXD,
+input JLINK_JTCK_SWCLK,
+inout COM_JLINK_SWDIO_SEL1,
+
+input DAP_LED_RUN,
+input DAP_RESET,
+input DAP_TDO_SWO,
+output DAP_TDI,
+input DAP_JTCK_SWCLK,.
+inout COM_DAP_SWDIO_SEL2,
+
+output reg DEBUG_RESET,
+output reg DEBUG_TDO_SWO,
+input      DEBUG_TDI,
+output reg DEBUG_JTCK_SWCLK,
+inout      DEBUG_JTMS_SWDIO,
+
+output reg LED_G,
+output reg LED_B,
+output reg LED_R
+);
+
+
+endmodule
